@@ -12,7 +12,6 @@ public class ProyectoFelinus {
 
         control ctrl = new control(us, in);
         ctrl.iniciar();
-        in.CampoPassword.setEchoChar('*');
         in.setVisible(true);
     }
 }

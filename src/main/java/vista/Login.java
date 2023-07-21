@@ -28,12 +28,12 @@ public class Login extends javax.swing.JFrame {
 
         Fondo = new javax.swing.JPanel();
         CampoUsuario = new java.awt.TextField();
-        CampoPassword = new java.awt.TextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         BtnIngresar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        CampoPassword = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -45,29 +45,25 @@ public class Login extends javax.swing.JFrame {
         Fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         Fondo.add(CampoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 150, 20));
 
-        CampoPassword.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CampoPasswordActionPerformed(evt);
-            }
-        });
-        Fondo.add(CampoPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 150, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jesus\\Documents\\NetBeansProjects\\Felinus\\src\\main\\java\\vista\\imagenes\\user32.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jesus\\Documents\\ITO\\verano\\ProyectoFelinus\\src\\main\\java\\vista\\user32.png")); // NOI18N
         Fondo.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, -1, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jesus\\Documents\\NetBeansProjects\\Felinus\\src\\main\\java\\vista\\imagenes\\pass32.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jesus\\Documents\\ITO\\verano\\ProyectoFelinus\\src\\main\\java\\vista\\pass32.png")); // NOI18N
         Fondo.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jesus\\Documents\\NetBeansProjects\\Felinus\\src\\main\\java\\vista\\imagenes\\user128.png")); // NOI18N
-        Fondo.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jesus\\Documents\\ITO\\verano\\ProyectoFelinus\\src\\main\\java\\vista\\user128.png")); // NOI18N
+        Fondo.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, -1, -1));
 
         BtnIngresar.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         BtnIngresar.setText("Ingresar");
-        Fondo.add(BtnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 120, 51));
+        Fondo.add(BtnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, 120, 51));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial Narrow", 3, 24)); // NOI18N
         jLabel4.setText("FELINUS");
-        Fondo.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, 75, 33));
+        Fondo.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, 90, 33));
+
+        CampoPassword.setBackground(new java.awt.Color(255, 255, 255));
+        Fondo.add(CampoPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 150, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -89,48 +85,14 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CampoPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoPasswordActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CampoPasswordActionPerformed
-
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Login().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton BtnIngresar;
-    public java.awt.TextField CampoPassword;
+    public javax.swing.JPasswordField CampoPassword;
     public java.awt.TextField CampoUsuario;
     private javax.swing.JPanel Fondo;
     private javax.swing.JLabel jLabel1;

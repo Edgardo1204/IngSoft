@@ -72,23 +72,10 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="java.awt.TextField" name="CampoPassword">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CampoPasswordActionPerformed"/>
-          </Events>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-          </AuxValues>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="220" y="300" width="150" height="-1"/>
-            </Constraint>
-          </Constraints>
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Jesus\Documents\NetBeansProjects\Felinus\src\main\java\vista\imagenes\user32.png"/>
+              <Image iconType="2" name="C:\Users\Jesus\Documents\ITO\verano\ProyectoFelinus\src\main\java\vista\user32.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -100,7 +87,7 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Jesus\Documents\NetBeansProjects\Felinus\src\main\java\vista\imagenes\pass32.png"/>
+              <Image iconType="2" name="C:\Users\Jesus\Documents\ITO\verano\ProyectoFelinus\src\main\java\vista\pass32.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -112,12 +99,12 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Jesus\Documents\NetBeansProjects\Felinus\src\main\java\vista\imagenes\user128.png"/>
+              <Image iconType="2" name="C:\Users\Jesus\Documents\ITO\verano\ProyectoFelinus\src\main\java\vista\user128.png"/>
             </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="190" y="30" width="-1" height="-1"/>
+              <AbsoluteConstraints x="200" y="30" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -133,20 +120,35 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="190" y="400" width="120" height="51"/>
+              <AbsoluteConstraints x="200" y="370" width="120" height="51"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="3"/>
+              <Font name="Arial Narrow" size="24" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="FELINUS"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="210" y="180" width="75" height="33"/>
+              <AbsoluteConstraints x="220" y="170" width="90" height="33"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JPasswordField" name="CampoPassword">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="220" y="300" width="150" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
