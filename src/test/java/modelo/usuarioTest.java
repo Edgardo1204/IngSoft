@@ -1,15 +1,15 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
 package modelo;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
@@ -20,19 +20,19 @@ public class usuarioTest {
     public usuarioTest() {
     }
     
-    @BeforeClass
+    @BeforeAll
     public static void setUpClass() {
     }
     
-    @AfterClass
+    @AfterAll
     public static void tearDownClass() {
     }
     
-    @Before
+    @BeforeEach
     public void setUp() {
     }
     
-    @After
+    @AfterEach
     public void tearDown() {
     }
 
@@ -82,14 +82,16 @@ public class usuarioTest {
      */
     @Test
     public void testSetUsuario() {
-        System.out.println("setUsuario");
-        String usuario = "";
-        usuario instance = new usuario();
-        instance.setUsuario(usuario);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
+    System.out.println("setUsuario");
+    String usuario = "nombre_de_usuario"; // Ingresa aquí el valor del usuario que desees probar
+    usuario instance = new usuario();
+    instance.setUsuario(usuario);
+    
+    // Realiza las aserciones aquí, según la funcionalidad que estés probando
+    // Por ejemplo, si el método setUsuario establece correctamente el atributo usuario,
+    // podrías usar el siguiente código para verificarlo:
+    assertEquals(usuario, instance.getUsuario());
+}
     /**
      * Test of getPassword method, of class usuario.
      */

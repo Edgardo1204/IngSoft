@@ -19,7 +19,7 @@ public class ConexionDB {
     // Funcion que va conectarse a mi bd de mysql
     public Connection conectar() {
         con = null;
-        try {
+    try {
             con = (Connection) DriverManager.getConnection(url, user, pass);
             if (con != null) {
             }
