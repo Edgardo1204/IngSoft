@@ -42,9 +42,9 @@ public class consultarUsuarioTest {
     @Test
     public void testLog() throws Exception {
         System.out.println("log");
-        usuario user = null;
+        usuario user = new usuario("admin", "1234", 1);
         consultarUsuario instance = new consultarUsuario();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.log(user);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

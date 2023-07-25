@@ -8,6 +8,15 @@ public class usuario {
     private String usuario;
     private String password;
     private int rol;
+    private int intentos;
+
+    public int getIntentos() {
+        return intentos;
+    }
+
+    public void setIntentos(int intentos) {
+        this.intentos = intentos;
+    }
 
     public usuario() {
     }

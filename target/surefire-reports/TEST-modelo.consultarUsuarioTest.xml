@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="modelo.consultarUsuarioTest" time="1.838" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="modelo.consultarUsuarioTest" time="2.087" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.7+8-LTS-224"/>
@@ -61,10 +61,11 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="modelo.consultarUsuarioTest" name="modelo.consultarUsuarioTest.testLog" time="1.838">
-    <failure message="Cannot invoke &quot;modelo.usuario.getPassword()&quot; because &quot;user&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;modelo.usuario.getPassword()&quot; because &quot;user&quot; is null
-	at modelo.consultarUsuario.log(consultarUsuario.java:23)
-	at modelo.consultarUsuarioTest.testLog(consultarUsuarioTest.java:48)
+  <testcase classname="modelo.consultarUsuarioTest" name="modelo.consultarUsuarioTest.testLog" time="2.087">
+    <failure message="The test case is a prototype." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
+	at modelo.consultarUsuarioTest.testLog(consultarUsuarioTest.java:51)
 </failure>
     <system-out>log
 </system-out>
